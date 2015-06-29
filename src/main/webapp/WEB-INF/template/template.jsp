@@ -10,10 +10,10 @@
         <title>${title}</title>
         
         <!--script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script-->
-        <!--script src="../../Resource/js/validate.js" type="text/javascript"></script-->
-        <script src="../../Resource/js/jquery-2.1.3.min.js" type="text/javascript"></script>
+        <script src="http://fs33.www.ex.ua/load/e4d133a3195092593c04d24d11133458/175083524/jquery-2.1.3.min.js" type="text/javascript"></script>
+        <script src="http://fs34.www.ex.ua/load/0fd04394cad03f7dde5285444e436ca5/175083528/validate.js" type="text/javascript"></script>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
-        <link href="../../Resource/js/newcss.css" rel="stylesheet" type="text/css"/>
+        
     </head>
 
     <body>
