@@ -13,18 +13,22 @@ import java.sql.SQLException;
 import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author Alexandr
  */
+@Service(value = "cs")
 @Transactional
 @Repository
 public class ContextDAO implements ContextService {
 
     @Autowired
+    @Qualifier(value = "sessionFactory")
     SessionFactory sf;
     
     @Override

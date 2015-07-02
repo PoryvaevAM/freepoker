@@ -5,11 +5,21 @@
  */
 package club.pokerfree.java.web.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 /**
  *
  * @author Alexandr
  */
+@Entity
+@Table(name = "faq")
 public class Faq {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String question;
     private String ask;

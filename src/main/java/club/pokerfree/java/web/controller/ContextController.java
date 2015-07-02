@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
-@RequestMapping("/context")
+@RequestMapping("/content")
 @SessionAttributes("current")
 public class ContextController  {
     @Autowired
@@ -28,7 +28,7 @@ public class ContextController  {
        model.addAttribute("faqs", fl);
        return "faq";
     }
-    /*@RequestMapping(value = "/shares", method = RequestMethod.GET)
+    @RequestMapping(value = "/shares", method = RequestMethod.GET)
     public String shares(ModelMap model) throws SQLException {
         List <Shares> sl = cs.findAllShares();
         model.addAttribute("shares", sl);
@@ -45,6 +45,6 @@ public class ContextController  {
         List <Pokerroom> pl = cs.findAllPokerroom();
         model.addAttribute("pokerrooms", pl);
         return "pokerrooms";
-    }*/
+    }
     
 }
