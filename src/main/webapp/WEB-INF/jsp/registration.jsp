@@ -5,12 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="text-center center-block" style="width: 300px">
-                    <div>
-                        <script type="text/javascript">
-                           
-                                alert("it is working!");
-                           
-                        </script>
+                    <div> 
                        <div id="contentRegistration" class="form-group">
                            <form id="jform" action="<c:url value="/user/registered" />" method="post" >
 				<fieldset>
