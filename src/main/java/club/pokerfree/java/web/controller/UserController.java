@@ -60,15 +60,15 @@ public class UserController  {
             ModelMap model) throws SQLException {
         User u = new User();
         
-        //u.setId(userService.findAll().size()+1); 
         u.setLogin(login);
         u.setPassword(password);
         u.setEmail(email);
         u.setFullname(fullname);
-       
+        if(u.getEmail().indexOf('@')== -1) {return "login";}
+        else{
         userService.insertUser(u);
         model.addAttribute("query", login);
-         
-        return "registered";
+        return "registered"; 
+        }
     }
 }
